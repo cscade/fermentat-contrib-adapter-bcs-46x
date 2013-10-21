@@ -1,10 +1,10 @@
 {
-  "name": "fermentat-contrib-adapter-bcs-46x",
-  "description": "The official bcs-46x adapter for the ferment.at client.",
-  "author": "Carson S. Christian <cscade@gmail.com>",
-  "version": "0.0.0",
-  "dependencies": {
-    "bcs.client": "~0.1.3"
-  },
-  "devDependencies": {}
+    "name": "fermentat-contrib-adapter-bcs-46x",
+    "description": "The official bcs-46x adapter for the ferment.at client.",
+    "author": "Carson S. Christian <cscade@gmail.com>",
+    "version": "0.0.1",
+    "dependencies": {
+        "bcs.client": "~0.1.3"
+    },
+    "devDependencies": {}
 }
