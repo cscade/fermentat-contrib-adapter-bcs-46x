@@ -13,6 +13,10 @@ var Device = require('bcs.client');
 	
 	The device adapter object. Provides all connectivity to the controller.
 
+	Public properties;
+		adapter.ready {Boolean}
+		adapter.deviceType {String} Descriptive string for the kind of device.
+
 	@param {String} host ex. 192.168.1.10
 	@param {Number} [port] || 80
 	@param {Function} next(e, adapter)
@@ -30,6 +34,7 @@ var Adapter = function (host, port, next) {
 	this.device = new Device(host, port || 80, function (e, deviceInfo) {
 		if (e) return next(e);
 		adapter.ready = deviceInfo.ready;
+		adapter.deviceType = deviceInfo.firmware;
 		next(null, adapter);
 	});
 };
