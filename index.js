@@ -29,12 +29,14 @@ var Adapter = function (host, port, next) {
 		port = undefined;
 	}
 	this.ready = false;
-	// BCS.client does not support https connections, so it expects an IP address or FQDN, with no scheme.
+	// BCS devices do not support https connections, ensure host is an IP address or FQDN with no scheme.
 	if (/:\/\//.test(host)) host = host.split('://')[1];
 	this.device = new Device(host, port || 80, function (e, deviceInfo) {
 		if (e) return next(e);
 		adapter.ready = deviceInfo.ready;
-		adapter.deviceType = deviceInfo.firmware;
+		adapter.device = {
+			info: deviceInfo
+		};
 		next(null, adapter);
 	});
 };
