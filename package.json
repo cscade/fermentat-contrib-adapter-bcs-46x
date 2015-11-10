@@ -1,18 +1,18 @@
 {
-	"author": "Carson S. Christian <cscade@gmail.com>",
-	"dependencies": {
-		"bcs.client": "^1.0.1"
-	},
-	"description": "The official bcs-46x adapter for the ferment.at client.",
-	"devDependencies": {},
-	"engines": {
-		"node": ">=4.0.0"
-	},
-	"license": "MIT",
-	"name": "fermentat-contrib-adapter-bcs-46x",
-	"repository": {
+    "author": "Carson S. Christian <cscade@gmail.com>",
+    "dependencies": {
+        "bcs.client": "^1.0.1"
+    },
+    "description": "The official bcs-46x adapter for the ferment.at client.",
+    "devDependencies": {},
+    "engines": {
+        "node": ">=4.0.0"
+    },
+    "license": "MIT",
+    "name": "fermentat-contrib-adapter-bcs-46x",
+    "repository": {
         "type": "git",
         "url": "git://github.com/cscade/fermentat-contrib-adapter-bcs-46x.git"
     },
-	"version": "0.1.0"
+    "version": "0.1.1"
 }
